@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 30px auto 0;
+            background: #333;
+            padding: 30px 20px;
+
+
+        }
+
+        section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        #customData, #customData1 {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .btnSearch {
+            height: 40px;
+            padding: 10px;
+
+        }
+
+        .card,
+        .card1 {
+            max-width: 150px;
+            min-height: 200px;
+            display: flex;
+            flex-direction: column;
+            margin: 20px;
+            padding: 10px;
+            background: #f4f4f4;
+            border-radius: 15px;
+            box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        .img-fluid {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .img {
+            background: #7ab5c4;
+
+        }
+
+        #searchBox {
+            height: 40px;
+            width: 100%;
+            max-width: 300px;
+            border: 1px solid #7ab5c4;
+            outline: none;
+            line-height: 1.6;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <section>
+                <input type="search" id="searchBox" value="">
+                <button type="button" class="btnSearch">Search</button>
+
+            </section>
+            <section id="data_container">
+                <div id="customData">
+
+                </div>
+                <div id="customData1">
+
+                </div>
+
+            </section>
+        </div>
+    </main>
+
+    <script src="./script.js">
+
+
+
+
+        // (async () => {
+        //     try {
+        //         // let res = await fetch('https://pokeapi.co/api/v2/pokemon?limit=151')
+        //         // let res = await fetch('https://api.imgflip.com/get_memes')
+        //         let res = await fetch('./pokemon.json')
+        //         pokemonJson = await res.json();
+        //         console.log(pokemonJson);
+        //         renderPokemon(pokemonJson);
+
+
+        //     } catch (error) {
+        //         error => console.error(error)
+        //     }
+        // })();
+
+
+
+
+        // function renderPokemon(pokemonJson) {
+
+        //     pokemonJson.forEach(element => {
+        //         let pokemonAvatar = `<div class='card'>
+        // <div class='img'> <img class="img-fluid" src="${url}"> </div>
+        //     <div class='context'>
+        //         <p>${name}</p>
+        // </div>`;
+        //         customData.insertAdjacentHTML('afterbegin', pokemonAvatar);
+        //     });
+        // }
+
+
+        // function UPDATERESULTS() {
+
+        // }
+
+
+    </script>
+
+</body>
+
+</html>
